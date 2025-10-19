@@ -16,7 +16,7 @@ def start(message):
     markup.add(types.InlineKeyboardButton("Admin bilan bog'lanish", url=f"https://t.me/{ADMIN_USERNAME[1:]}"))
     bot.send_message(message.chat.id, "🤖 Bot ishga tushdi!\nMusiqa nomi yoki ssilka yuboring.", reply_markup=markup)
 
-# Foydalanuvchi xabarini qabul qilish
+#oydalanuvchi xabarini qabul qilish
 @bot.message_handler(func=lambda m: True)
 def handle_message(message):
     text = message.text.strip()
